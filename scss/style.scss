@@ -33,6 +33,7 @@ body {
     margin: 20px 15px;
     font-size: 0;
     height: 433px;
+    @include tr;
     &--lg {
       height: 473px;
       vertical-align: middle;
