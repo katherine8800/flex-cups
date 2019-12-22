@@ -9,10 +9,12 @@
 html {
   height: 100%;
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
+
   background-color: $brand-color;
 }
 
@@ -24,7 +26,10 @@ body {
   justify-content: center;
   align-content: center;
   text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
   &__item {
+    max-width: 370px;
     display: inline-block;
     background-color: #fff;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
@@ -34,18 +39,16 @@ body {
     font-size: 0;
     height: 433px;
     @include tr;
+    padding: 35px 100px;
+
     &--lg {
+      padding: 45px 100px;
       height: 473px;
       vertical-align: middle;
       margin-top: 0;
     }
   }
   &__container {
-    padding: 35px 100px;
-
-    &--lg {
-      padding: 45px 100px;
-    }
   }
   &__price {
     color: $price-color;
@@ -67,6 +70,8 @@ body {
     font-size: 2rem;
     color: $text-color;
     font-family: $subtitle-ff;
+    max-height: 4.7rem;
+    overflow: hidden;
   }
   &__item:hover,
   &__item:focus,
